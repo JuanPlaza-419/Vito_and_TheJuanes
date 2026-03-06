@@ -1,6 +1,4 @@
-# Sistema Inteligente de Análisis de
-
-# Opiniones de Películas
+# Sistema Inteligente de Análisis de opiniones de Películas
 
 ## 1. Definición del proyecto
 
