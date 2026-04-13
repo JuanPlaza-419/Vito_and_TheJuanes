@@ -10,16 +10,16 @@ def generate_description(house, price):
     prompt = f"""
     Eres un experto inmobiliario.
 
-    Tu tarea es escribir una descripción de una vivienda usando SOLO los datos dados.
+    Tu tarea es escribir una descripción de una vivienda usando solo los datos dados.
 
-    REGLAS:
+    Reglas:
     - No inventar información
     - No añadir características no mencionadas
     - No cambiar los números
     - Redactar de forma atractiva para venta
     - Máximo 120 palabras
 
-    DATOS:
+    Datos:
     - Superficie: {house.area} m²
     - Habitaciones: {house.bedrooms}
     - Baños: {house.bathrooms}
@@ -31,7 +31,7 @@ def generate_description(house, price):
     - Zona preferente: {"Sí" if house.prefarea else "No"}
     - Precio: {price} euros
 
-    DESCRIPCIÓN:
+    Descripción:
     """
 
     result = generator(
