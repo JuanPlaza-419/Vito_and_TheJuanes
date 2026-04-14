@@ -18,9 +18,20 @@ export async function createHouse(data) {
 
 export async function filterHouses(minPrice, maxPrice) {
   const params = new URLSearchParams();
-  if (minPrice) params.append('minPrice', minPrice);
-  if (maxPrice) params.append('maxPrice', maxPrice);
-  const res = await fetch(`${BASE_URL}/houses/filter?${params}`);
-  if (!res.ok) throw new Error('Error filtrando viviendas');
+
+  if (minPrice !== null && minPrice !== undefined) {
+    params.append("min_price", minPrice);
+  }
+
+  if (maxPrice !== null && maxPrice !== undefined) {
+    params.append("max_price", maxPrice);
+  }
+
+  const res = await fetch(
+    `${BASE_URL}/houses/filter?${params.toString()}`
+  );
+
+  if (!res.ok) throw new Error("Error filtrando viviendas");
+
   return res.json();
 }
