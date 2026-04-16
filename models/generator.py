@@ -16,6 +16,7 @@ def generate_description(house, price):
     - No inventar información
     - No añadir características no mencionadas
     - No cambiar los números
+    - No inventarse localizaciones
     - Redactar de forma atractiva para venta
     - Máximo 120 palabras
 

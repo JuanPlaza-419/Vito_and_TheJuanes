@@ -1,0 +1,23 @@
+:root {
+  --brand: #FF6B35;
+  --brand-dark: #e85a22;
+  --brand-light: #fff2ec;
+  --text-primary: #0f0f0f;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --bg: #ffffff;
+  --bg-subtle: #fafafa;
+  --bg-card: #ffffff;
+  --border: #f0f0f0;
+  --border-mid: #e5e7eb;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,.1);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --nav-h: 64px;
+  --transition: .2s cubic-bezier(.4,0,.2,1);
+}
